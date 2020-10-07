@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr-FR">
+<html lang="en-EN">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="https://code.thomas-marget.fr/favicons/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="https://code.thomas-marget.fr/favicons/favicon-16x16.png" />
   <link rel="stylesheet" href="https://code.thomas-marget.fr/css/style.min.css" media="all" />
+  <link rel="stylesheet" href="https://code.thomas-marget.fr/css/prism.min.css" media="all" />
   <link rel="stylesheet" href="./assets/css/matchme.css" media="all" />
 </head>
 <body>
@@ -22,58 +23,123 @@
     </p>
   </nav>
   <header>
-    <h1>MatchMeCSS - Demo</h1>
+    <h1 tabindex="0">MatchMeCSS - Demo</h1>
   </header>
   <main>
-    <div class="snippet">
-      <h2>Beating heart</h2>
-      <!-- Block snippet starts. -->
-      <figure class="figure">
-        <div class="figure__rel">
-          <!-- Handle first image (default on left side). You can add all types of images, but SVG is recommanded to preserve quality. -->
-          <img class="figure__item figure__item--first" src="./images/parrot.jpg" width="200" height="200" loading="lazy" alt="Photo by No-longer-here@Pixabay" />
-          <span class="figure__link figure__link--beating">
-            <!-- Handle link chip icon. You can add all types of images, but SVG is recommanded to preserve quality. -->
-            <svg class="figure__link__icon" viewBox="0 0 32 32">
-              <title>Link Icon</title>
-              <path d="M22.5,5c-2.892,0-5.327,1.804-6.5,2.854C14.827,6.804,12.392,5,9.5,5C5.364,5,2,8.364,2,12.5c0,2.59,2.365,4.947,2.46,5.041 L16,29.081l11.534-11.534C27.635,17.447,30,15.09,30,12.5C30,8.364,26.636,5,22.5,5z"/>
-            </svg>
-          </span>
-          <!-- Handle last image (default on right side). You can add all types of images, but SVG is recommanded to preserve quality. -->
-          <img class="figure__item figure__item--last" src="./images/tiger.jpg" width="200" height="200" loading="lazy" alt="Photo by blende12@Pixabay" />
+    <section>
+      <h2 tabindex="0">Code snippets</h2>
+      <div class="snippet">
+        <h3 tabindex="0">Beating heart</h3>
+        <!-- Block snippet starts. -->
+        <figure class="figure">
+          <div class="figure__rel">
+            <!-- Handle first image (default on left side). You can add all types of images, but SVG is recommanded to preserve quality. -->
+            <img class="figure__item figure__item--first" src="./images/parrot.jpg" width="200" height="200" loading="lazy" alt="Photo by No-longer-here@Pixabay" />
+            <span class="figure__link figure__link--beating">
+              <!-- Handle link chip icon. You can add all types of images, but SVG is recommanded to preserve quality. -->
+              <svg class="figure__link__icon" viewBox="0 0 32 32">
+                <title>Link Icon</title>
+                <path d="M22.5,5c-2.892,0-5.327,1.804-6.5,2.854C14.827,6.804,12.392,5,9.5,5C5.364,5,2,8.364,2,12.5c0,2.59,2.365,4.947,2.46,5.041 L16,29.081l11.534-11.534C27.635,17.447,30,15.09,30,12.5C30,8.364,26.636,5,22.5,5z"/>
+              </svg>
+            </span>
+            <!-- Handle last image (default on right side). You can add all types of images, but SVG is recommanded to preserve quality. -->
+            <img class="figure__item figure__item--last" src="./images/tiger.jpg" width="200" height="200" loading="lazy" alt="Photo by blende12@Pixabay" />
+          </div>
+          <figcaption class="figure__caption">This is a beating match !</figcaption>
+        </figure>
+        <div class="code">
+          <h4 class="code__title" tabindex="0"><abbr>HTML</abbr></h4>
+          <pre class="code__include">
+            <code class="language-markup">
+              &lt;figure class=&quot;figure&quot;&gt;
+                &lt;div class=&quot;figure__rel&quot;&gt;
+                  &lt;img class=&quot;figure__item figure__item--first&quot; src=&quot;./images/parrot.jpg&quot; width=&quot;200&quot; height=&quot;200&quot; loading=&quot;lazy&quot; alt=&quot;Photo by No-longer-here@Pixabay&quot; /&gt;
+                  &lt;span class=&quot;figure__link figure__link--beating&quot;&gt;
+                    &lt;svg class=&quot;figure__link__icon&quot; viewBox=&quot;0 0 32 32&quot;&gt;
+                      &lt;title&gt;Link Icon&lt;/title&gt;
+                      &lt;path d=&quot;M22.5,5c-2.892,0-5.327,1.804-6.5,2.854C14.827,6.804,12.392,5,9.5,5C5.364,5,2,8.364,2,12.5c0,2.59,2.365,4.947,2.46,5.041 L16,29.081l11.534-11.534C27.635,17.447,30,15.09,30,12.5C30,8.364,26.636,5,22.5,5z&quot;/&gt;
+                    &lt;/svg&gt;
+                  &lt;/span&gt;
+                  &lt;img class=&quot;figure__item figure__item--last&quot; src=&quot;./images/tiger.jpg&quot; width=&quot;200&quot; height=&quot;200&quot; loading=&quot;lazy&quot; alt=&quot;Photo by blende12@Pixabay&quot; /&gt;
+                &lt;/div&gt;
+                &lt;figcaption class=&quot;figure__caption&quot;&gt;This is a beating match !&lt;/figcaption&gt;
+              &lt;/figure&gt;
+            </code>
+          </pre>
         </div>
-        <figcaption class="figure__caption">This is a beating match !</figcaption>
-      </figure>
-      <!-- Block snippet ends. -->
-      <h2>Sliding star</h2>
-      <!-- Block snippet starts. -->
-      <figure class="figure">
-        <div class="figure__rel">
-          <!-- Handle first image (default on left side). You can add all types of images, but SVG is recommanded to preserve quality. -->
-          <img class="figure__item figure__item--first" src="./images/parrot.jpg" width="200" height="200" loading="lazy" alt="Photo by No-longer-here@Pixabay" />
-          <span class="figure__link figure__link--sliding">
-            <!-- Handle link chip icon. You can add all types of images, but SVG is recommanded to preserve quality. -->
-            <svg class="figure__link__icon" viewBox="0 0 32 32">
-              <title>Link Icon</title>
-              <path d="M 30.335938 12.546875 L 20.164063 11.472656 L 16 2.132813 L 11.835938 11.472656 L 1.664063 12.546875 L 9.261719 19.394531 L 7.140625 29.398438 L 16 24.289063 L 24.859375 29.398438 L 22.738281 19.394531 Z"/>
-            </svg>
-          </span>
-          <!-- Handle last image (default on right side). You can add all types of images, but SVG is recommanded to preserve quality. -->
-          <img class="figure__item figure__item--last" src="./images/tiger.jpg" width="200" height="200" loading="lazy" alt="Photo by blende12@Pixabay" />
+        <!-- Block snippet ends. -->
+      </div>
+      <div class="snippet">
+        <h3 tabindex="0">Sliding star</h3>
+        <!-- Block snippet starts. -->
+        <figure class="figure">
+          <div class="figure__rel">
+            <!-- Handle first image (default on left side). You can add all types of images, but SVG is recommanded to preserve quality. -->
+            <img class="figure__item figure__item--first" src="./images/parrot.jpg" width="200" height="200" loading="lazy" alt="Photo by No-longer-here@Pixabay" />
+            <span class="figure__link figure__link--sliding">
+              <!-- Handle link chip icon. You can add all types of images, but SVG is recommanded to preserve quality. -->
+              <svg class="figure__link__icon" viewBox="0 0 32 32">
+                <title>Link Icon</title>
+                <path d="M 30.335938 12.546875 L 20.164063 11.472656 L 16 2.132813 L 11.835938 11.472656 L 1.664063 12.546875 L 9.261719 19.394531 L 7.140625 29.398438 L 16 24.289063 L 24.859375 29.398438 L 22.738281 19.394531 Z"/>
+              </svg>
+            </span>
+            <!-- Handle last image (default on right side). You can add all types of images, but SVG is recommanded to preserve quality. -->
+            <img class="figure__item figure__item--last" src="./images/tiger.jpg" width="200" height="200" loading="lazy" alt="Photo by blende12@Pixabay" />
+          </div>
+          <figcaption class="figure__caption">This is a sliding match !</figcaption>
+        </figure>
+        <div class="code">
+          <h4 class="code__title" tabindex="0"><abbr>HTML</abbr></h4>
+          <pre class="code__include">
+            <code class="language-markup">
+              &lt;figure class=&quot;figure&quot;&gt;
+                &lt;div class=&quot;figure__rel&quot;&gt;
+                  &lt;img class=&quot;figure__item figure__item--first&quot; src=&quot;./images/parrot.jpg&quot; width=&quot;200&quot; height=&quot;200&quot; loading=&quot;lazy&quot; alt=&quot;Photo by No-longer-here@Pixabay&quot; /&gt;
+                  &lt;span class=&quot;figure__link figure__link--sliding&quot;&gt;
+                    &lt;svg class=&quot;figure__link__icon&quot; viewBox=&quot;0 0 32 32&quot;&gt;
+                      &lt;title&gt;Link Icon&lt;/title&gt;
+                      &lt;path d=&quot;M 30.335938 12.546875 L 20.164063 11.472656 L 16 2.132813 L 11.835938 11.472656 L 1.664063 12.546875 L 9.261719 19.394531 L 7.140625 29.398438 L 16 24.289063 L 24.859375 29.398438 L 22.738281 19.394531 Z&quot;/&gt;
+                    &lt;/svg&gt;
+                  &lt;/span&gt;
+                  &lt;img class=&quot;figure__item figure__item--last&quot; src=&quot;./images/tiger.jpg&quot; width=&quot;200&quot; height=&quot;200&quot; loading=&quot;lazy&quot; alt=&quot;Photo by blende12@Pixabay&quot; /&gt;
+                &lt;/div&gt;
+                &lt;figcaption class=&quot;figure__caption&quot;&gt;This is a sliding match !&lt;/figcaption&gt;
+              &lt;/figure&gt;
+            </code>
+          </pre>
         </div>
-        <figcaption class="figure__caption">This is a sliding match !</figcaption>
-      </figure>
-      <!-- Block snippet ends. -->
-    </div>
+        <!-- Block snippet ends. -->
+      </div>
+    </section>
+    <section>
+      <h2 tabindex="0">How to use</h2>
+      <ol class="helper">
+        <li>Add <code>/css/matchme.css</code> to your document.
+          <div class="code">
+            <h4 class="code__title" tabindex="0"><abbr>HTML</abbr></h4>
+            <pre class="code__include">
+              <code class="language-markup">
+                &lt;link rel=&quot;stylesheet&quot; href=&quot;./your/path/to/matchme.css&quot; media=&quot;all&quot; /&gt;
+              </code>
+            </pre>
+          </div>
+        </li>
+        <li>Or, include it your global <abbr title="Cascading Style Sheets">CSS</abbr>/<abbr title="Syntactically Awesome Style Sheets">SASS</abbr> bundle file to minimize <abbr title="HyperText Transfer Protocole">HTTP</abbr> requests.</li>
+        <li>Copy/paste the snippet you want in your document / component and replace demo content with your own (<a href="https://github.com/ThomasM85/ThomasM85/tree/master/snippets/matchmecss#customization">how customize ?</a>).</li>
+        <li>Customize <a href="https://github.com/ThomasM85/ThomasM85/tree/master/snippets/matchmecss#semantics">markup</a>, <a href="https://github.com/ThomasM85/ThomasM85/tree/master/snippets/matchmecss#css-properties"><abbr>CSS</abbr> properties</a> and <a href="https://github.com/ThomasM85/ThomasM85/tree/master/snippets/matchmecss#animations">animations</a> to fit with your <abbr title="User Interface">UI</abbr>.</li>
+        <li><strong>That's all. Enjoy !</strong></li>
+      </ol>
+    </section>
   </main>
   <footer>
     <p class="github">
       <a href="https://github.com/ThomasM85/ThomasM85/tree/master/snippets/matchmecss">Get it on Github</a>
     </p>
-    <p>HTML & CSS code and design by ThomasM85 under <a href="https://github.com/ThomasM85/ThomasM85/blob/master/LICENSE">GNU GPL 3.0 licence</a>.
+    <p><abbr>HTML</abbr> & <abbr>CSS</abbr> code and design by ThomasM85 under <a href="https://github.com/ThomasM85/ThomasM85/blob/master/LICENSE">GNU GPL 3.0 licence</a>.
       <br/>Images by <a href="https://pixabay.com/fr/users/blende12-201217/">blende12</a>, <a href="https://pixabay.com/users/wikiimages-1897/">WikiImages</a> and <a href="https://pixabay.com/fr/users/no-longer-here-19203/">No-longer-here</a> under <a href="https://pixabay.com/service/license/">Pixabay licence</a>.
-      <br />SVG icons by <a href="https://icons8.com/line-awesome">Icon8</a> under <a href="https://icons8.com/license">Free licence</a>.
+      <br /><abbr title="Scalable Vector Graphics">SVG</abbr> icons by <a href="https://icons8.com/line-awesome">Icon8</a> under <a href="https://icons8.com/license">Free licence</a>.
     </p>
   </footer>
+  <script src="https://code.thomas-marget.fr/js/prism.min.js"></script>
 </body>
 </html>
