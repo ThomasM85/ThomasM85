@@ -6,6 +6,10 @@ MatchMeCSS is a pretty snippet to represent matching relation between to items (
 
 It is full responsive and cross-modern-browsers. So enjoy it !
 
+## Demo
+
+Check demos here : https://code.thomas-marget.fr/snippets/matchmecss/.
+
 ## Compatibility
 
 Works on all modern browsers.
@@ -14,17 +18,9 @@ Works on all modern browsers.
 - CSS 3 with properties, Flex and Grid modules
 - SVG (if you use SVG pictures)
 
-## Semantics
-
-This snippet was designed for document figure illustration.
-
-By default, it uses `<figure>` and `<figcaption>` semantic tags. Of course, you can replace these by neutral tags like (`div`, `span`) or semantic tags (`p`, ...). Depends from HTML context where you will include it.
-
-Apparence and layout are handled by CSS classes (using BEM). Not by HTML tags.
-
 ## Usage
 
-- Add stylesheet `/css/matchme.css` into `<head>` of your HTML file
+- Add stylesheet `./assets/css/matchme.css` into `<head>` of your HTML file
 - Add HTML snippet bounded by `<!-- Block snippet starts. -->` and `<!-- Block snippet ends. -->` in your HTML document / component DOM
 - Customize content (take a look on next section)
 - Optional: Customize CSS to fit with your own design.
@@ -65,3 +61,11 @@ MatchMeCSS use 2 kind of preset animations : *beating* and *sliding*.
 You can use it in adding `.figure__link--beating` or `.figure__link--sliding` class into `.figure__link` HTML class attribute.
 
 Of course, you can create and add your own custom animations. Sky is the limit !
+
+## Semantics
+
+This snippet was designed for document figure illustration.
+
+By default, it uses `<figure>` and `<figcaption>` semantic tags. Of course, you can replace these by neutral tags like (`div`, `span`) or semantic tags (`p`, ...). Depends from HTML context where you will include it.
+
+Apparence and layout are handled by CSS classes (using BEM). Not by HTML tags.
