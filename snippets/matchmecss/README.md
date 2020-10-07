@@ -58,12 +58,12 @@ Caption of the whole figure.
 
 You can customize CSS properties with your own or add extra ones.
 
--`--color1`: Text color (default: `#fff`)
--`--color2`: Stroke color (default: `#ff0066`)
--`--imageBase`: Image item base dimension (default: `4rem`)
--`--linkBase`: Link chip base dimension
--`--iconBase`: Link chip icon base dimension
--`--strokeWeight`: Stroke base weight
+- `--color1`: Text color (default: `#fff`)
+- `--color2`: Stroke color (default: `#ff0066`)
+- `--imageBase`: Image item base dimension (default: `4rem`)
+- `--linkBase`: Link chip base dimension
+- `--iconBase`: Link chip icon base dimension
+- `--strokeWeight`: Stroke base weight
 
 ## Animations
 
