@@ -22,6 +22,26 @@
   border: 0;
 }
 
+.github {
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.github > a {
+  display: inline-block;
+  padding-right: 1rem;
+  padding-left: 3rem;
+  border-radius: 2rem;
+  font-weight: 700;
+  line-height: 3rem;
+  color: var(--color1);
+  text-decoration: none;
+  background-color: rgba(0,0,0,.5);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-image: url(../img/github.svg);
+}
+
 /* --- Base styles ------------------------------- */
 
 body {
@@ -107,18 +127,17 @@ main h2 {
 }
 
 footer {
-  padding-top: 4rem;
-  font-size: .6em;
-  color: rgba(255,255,255,.3);
   text-align: center;
 }
 
-footer p {
+footer p:not(.github) {
   position: relative;
   padding-top: 1rem;
+  font-size: .6em;
+  color: rgba(255,255,255,.3);
 }
 
-footer p::before {
+footer p:not(.github)::before {
   display: block;
   content: " ";
   width: 4rem;
