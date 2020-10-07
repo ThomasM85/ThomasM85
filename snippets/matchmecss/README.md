@@ -2,7 +2,7 @@
 
 ## Full responsive CSS only Matcher figure snippet
 
-MatchMeCSS is a pretty snippet to represent matching relation between to items (person, animals, companies...). It adds animation to illustrate your stories.
+MatchMeCSS is a pretty simple snippet to represent matching relation between to items (person, animals, companies...). It adds animation to illustrate your stories.
 
 It is full responsive and cross-modern-browsers. So enjoy it !
 
