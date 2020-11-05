@@ -1,26 +1,25 @@
-# MatchMeCSS
+# GridMeCSS
 
-## Full responsive CSS only Matcher figure snippet
+## Full responsive CSS only Grid snippet
 
-MatchMeCSS is a pretty simple snippet to represent matching relation between 2 items (person, animals, companies...). It adds sweet animation to illustrate your stories.
+GridMeCSS is a pretty simple snippet to organize pictures and cards into a responsive grid layout. It adds sweet feeds to illustrate your stories.
 
 It is full responsive and cross-modern-browsers. So... enjoy it !
 
 ## Demo
 
-Check demos here : https://code.thomas-marget.fr/snippets/matchmecss/.
+Check demos here : https://code.thomas-marget.fr/snippets/gridmecss/.
 
 ## Compatibility
 
 Works on all modern browsers.
 
 - HTML 5
-- CSS 3 with properties, Flex and Grid modules
-- SVG (if you use SVG pictures)
+- CSS 3 with properties, Properties and Grid modules
 
 ## Usage
 
-- Add stylesheet `./assets/css/matchme.css` into `<head>` of your HTML file
+- Add stylesheet `./dist/assets/css/gridme.min.css` into `<head>` of your HTML file
 - Add HTML snippet bounded by `<!-- Block snippet starts. -->` and `<!-- Block snippet ends. -->` in your HTML document / component DOM
 - Customize content (take a look on next section)
 - Optional: Customize CSS to fit with your own design.
@@ -28,30 +27,55 @@ Works on all modern browsers.
 
 ## Customization
 
+### Grid as pictures gallery
+
+You (have to) can replace demo content with your own for this 3 elements:
+
+#### `.gridme__gallery__linkbox`
+
+Gallery image link.
+- Image optimized for the Web (.webp, .svg, .png, . jpg, .gif...) URL
+- Default dimensions : as you wish
+
+#### `.gridme__gallery__caption`
+
+Gallery image caption.
+- Just plain text !
+
+#### `.gridme__gallery__media`
+
+Gallery image thumbnail.
+- Image optimized for the Web (.webp, .svg, .png, . jpg, .gif...)
+- Default dimensions : 300px x 300px
+
+### Grid as cards feed
+
 You (have to) can replace demo content with your own for this 4 elements:
 
-### `.figure__item--first`
+#### `.gridme__card__title`
 
-First image item.
+Card title.
+- Just plain text !
+
+#### `.gridme__cta`
+
+Card CTA link.
+- A simple URL !
+
+#### `.gridme__cta__label`
+
+Card CTA label.
+- Just plain text !
+
+#### `.gridme__card__cover__media`
+
+Card image thumbnail.
 - Image optimized for the Web (.webp, .svg, .png, . jpg, .gif...)
-- Default dimensions : 200px x 200px
+- Default dimensions : 450px x 300px
 
-### `.figure__item--last`
+#### `.gridme__card__desc`
 
-Last image item.
-- Image optimized for the Web (.webp, .svg, .png, . jpg, .gif...)
-- Default dimensions : 200px x 200px
-
-### `.figure__link__icon`
-
-Link chip icon.
-- Strongly recommanded to include as `<svg>` tag from your favourite svg icons library.
-- You can use `<img/>` tag instead.
-- Avoid bitmap format.
-
-### `.figure__caption`
-
-Caption of the whole figure.
+Card description.
 - Just plain text !
 
 ## CSS properties
@@ -60,23 +84,21 @@ You can customize CSS properties with your own or add extra ones.
 
 - `--color1`: Text color (default: `#fff`)
 - `--color2`: Stroke color (default: `#ff0066`)
-- `--imageBase`: Image item base dimension (default: `4rem`)
-- `--linkBase`: Link chip base dimension
-- `--iconBase`: Link chip icon base dimension
-- `--strokeWeight`: Stroke base weight
-
-## Animations
-
-MatchMeCSS use 2 kinds of preset animations : *beating* and *sliding*.
-
-You can use it in adding `.figure__link--beating` or `.figure__link--sliding` class into `.figure__link` HTML class attribute.
-
-Of course, you can create and add your own custom animations. Sky is the limit !
+- `--color3`: Stroke color (default: `#bbe004`)
+- `--gridRatio`: Grid item ratio base (default: `15rem`)
 
 ## Semantics
 
-This snippet was designed for document figure illustration.
+Apparence and layout are handled by CSS classes (using BEM). Not by HTML tags.
+
+### Grid as pictures gallery
+
+This snippet was designed for document picture gallery.
 
 By default, it uses `<figure>` and `<figcaption>` semantic tags. Of course, you can replace these by neutral tags like (`div`, `span`) or semantic tags (`p`, ...). Depends from HTML context where you will include it.
 
-Apparence and layout are handled by CSS classes (using BEM). Not by HTML tags.
+### Grid as cards feed
+
+This snippet was designed for document cards feed.
+
+By default, it uses `<article>` and `<h2>` semantic tags. Of course, you can replace these by neutral tags like (`div`, `span`) for the card or hn tags (`h3`, `h4`, ...). Depends from HTML context where you will include it.
