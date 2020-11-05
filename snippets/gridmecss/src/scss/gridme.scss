@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/* --- Properties ------------------------------- */
+
+:root {
+  --color1: #fff;
+  --color2: #ff0066;
+  --color3: #bbe004;
+  --gridRatio: 15rem; /* Grid item ratio */
+}
+
+/* --- Snippet ------------------------------- */
+
+.gridme {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--gridRatio), 1fr));
+  grid-template-rows: 1fr;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.gridme__item {
+  display: block;
+}
+
+@import 'modules/_gallery';
+@import 'modules/_card';

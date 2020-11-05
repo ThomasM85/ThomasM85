@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GridMeCSS by ThomasM85 - Demo</title>
+  <meta name="description" content="GridMeCSS is a pretty simple snippet to arrange items as a classic grid." />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:site_name" content="Thomas Marget - Frontend designer" />
+  <meta property="og:locale" content="en" />
+  <meta property="og:title" content="GridMeCSS by ThomasM85 - Demo" />
+  <meta property="og:description" content="GridMeCSS is a pretty simple snippet to arrange items as a classic grid." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://code.thomas-marget.fr/snippets/gridmecss/" />
+  <meta property="og:image" content="https://code.thomas-marget.fr/img/og-default.jpg" />
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://code.thomas-marget.fr/img/og-default.jpg"/>
+  <meta name="twitter:title" content="GridMeCSS by ThomasM85 - Demo"/>
+  <meta name="twitter:description" content="GridMeCSS is a pretty simple snippet to arrange items as a classic grid"/>
+  <meta name="application-name" content="GridMeCSS"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="https://code.thomas-marget.fr/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="https://code.thomas-marget.fr/favicons/favicon-16x16.png" />
+  <link rel="stylesheet" href="https://code.thomas-marget.fr/css/style.min.css" media="all" />
+  <link rel="stylesheet" href="https://code.thomas-marget.fr/css/prism.min.css" media="all" />
+  <link rel="stylesheet" href="./dist/assets/css/gridme.min.css" media="all" />
+  <style>
+    #loader{display:grid;justify-content:center;align-items:center;width:100%;height:100%;position:fixed;top:0;left:0;font-size:.7em;background-color:#f06;background-repeat:no-repeat;background-position:center center;background-size:cover;background-image:linear-gradient(20deg,rgba(255,0,102,.6),#1c003d 50%);transition:opacity .3s}#loader>p{width:1px;height:1px;position:absolute;clip:rect(0,0,0,0);overflow:hidden;padding:0;margin:-1px;border:0}@keyframes pacman-1{0%{transform:rotate(0)}50%{transform:rotate(-45deg)}100%{transform:rotate(0)}}@keyframes pacman-2{0%{transform:rotate(180deg)}50%{transform:rotate(225deg)}100%{transform:rotate(180deg)}}.pacman>div:nth-child(2){transform:translate(-15px,0)}.pacman>div:nth-child(2) div{position:absolute;top:20px;left:20px;width:60px;height:30px;border-radius:60px 60px 0 0;background:#bbe004;animation:pacman-1 1s linear infinite;transform-origin:30px 30px}.pacman>div:nth-child(2) div:nth-child(2){animation:pacman-2 1s linear infinite}.pacman>div:nth-child(2) div:nth-child(3){transform:rotate(-90deg);animation:none}@keyframes pacman-3{0%{transform:translate(95px,0);opacity:0}20%{opacity:1}100%{transform:translate(35px,0);opacity:1}}.pacman>div:nth-child(1){display:block}.pacman>div:nth-child(1) div{position:absolute;top:46px;left:-4px;width:8px;height:8px;border-radius:50%;background:#f06;animation:pacman-3 1s linear infinite}.pacman>div:nth-child(1) div:nth-child(1){animation-delay:-.67s}.pacman>div:nth-child(1) div:nth-child(2){animation-delay:-.33s}.pacman>div:nth-child(1) div:nth-child(3){animation-delay:0s}.loader-pacman{width:80px;height:80px;display:inline-block;overflow:hidden;background:0 0}.pacman{width:100%;height:100%;position:relative;transform:translateZ(0) scale(.8);backface-visibility:hidden;transform-origin:0 0}.pacman div{box-sizing:content-box}
+  </style>
+</head>
+<body itemscope itemtype="https://schema.org/WebPage">
+  <nav>
+    <p class="logo">My Code cave</p>
+    <p class="breadcrumbs">
+      <a href="https://code.thomas-marget.fr">My Code cave</a> >
+      <a href="https://code.thomas-marget.fr/snippets">Snippets</a> >
+      <span>GridMeCSS</span>
+    </p>
+    <p class="my-github">
+      <a href="https://github.com/ThomasM85/ThomasM85">My Github repository</a>
+    </p>
+  </nav>
+  <header>
+    <h1 tabindex="0">GridMeCSS - Demo</h1>
+  </header>
+  <main>
+    <section>
+      <h2 tabindex="0">Code snippets</h2>
+      <div class="snippet">
+        <h3 tabindex="0">Grid as pictures gallery</h3>
+        <!-- Block snippet starts. -->
+        <ul class="gridme gridme--gallery">
+          <li class="gridme__item">
+            <figure class="gridme__gallery">
+              <a class="gridme__gallery__linkbox" href="./dist/assets/images/lion.jpg">
+                <figcaption class="gridme__gallery__caption">Panthera leo</figcaption>
+                <span class="gridme__gallery__link-label">View fullsize</span>
+              </a>
+              <img class="gridme__gallery__media" src="./dist/assets/images/lion-square.jpg" width="300" height="300" loading="lazy" alt="Photo by Alexas_Fotos@Pixabay" />
+            </figure>
+          </li>
+          <li class="gridme__item">
+            <figure class="gridme__gallery">
+              <a class="gridme__gallery__linkbox" href="./dist/assets/images/ara-square.jpg">
+                <figcaption class="gridme__gallery__caption">Ara ararauna</figcaption>
+                <span class="gridme__gallery__link-label">View fullsize</span>
+              </a>
+              <img class="gridme__gallery__media" src="./dist/assets/images/ara-square.jpg" width="300" height="300" loading="lazy" alt="Photo by @Pixabay" />
+            </figure>
+          </li>
+          <li class="gridme__item">
+            <figure class="gridme__gallery">
+              <a class="gridme__gallery__linkbox" href="./dist/assets/images/panther.jpg">
+                <figcaption class="gridme__gallery__caption">Panthera pardus</figcaption>
+                <span class="gridme__gallery__link-label">View fullsize</span>
+              </a>
+              <img class="gridme__gallery__media" src="./dist/assets/images/panther-square.jpg" width="300" height="300" loading="lazy" alt="Photo by IanZA@Pixabay" />
+            </figure>
+          </li>
+          <li class="gridme__item">
+            <figure class="gridme__gallery">
+              <a class="gridme__gallery__linkbox" href="./dist/assets/images/peafowl.jpg">
+                <figcaption class="gridme__gallery__caption">Pavo cristatus</figcaption>
+                <span class="gridme__gallery__link-label">View fullsize</span>
+              </a>
+              <img class="gridme__gallery__media" src="./dist/assets/images/peafowl-square.jpg" width="300" height="300" loading="lazy" alt="Photo by @Pixabay" />
+            </figure>
+          </li>
+          <li class="gridme__item">
+            <figure class="gridme__gallery">
+              <a class="gridme__gallery__linkbox" href="./dist/assets/images/eagle.jpg">
+                <figcaption class="gridme__gallery__caption">Haliaeetus leucocephalus</figcaption>
+                <span class="gridme__gallery__link-label">View fullsize</span>
+              </a>
+              <img class="gridme__gallery__media" src="./dist/assets/images/eagle-square.jpg" width="300" height="300" loading="lazy" alt="Photo by Christoph@Pixabay" />
+            </figure>
+          </li>
+          <li class="gridme__item">
+            <figure class="gridme__gallery">
+              <a class="gridme__gallery__linkbox" href="./dist/assets/images/firefox.jpg">
+                <figcaption class="gridme__gallery__caption">Ailurus fulgens</figcaption>
+                <span class="gridme__gallery__link-label">View fullsize</span>
+              </a>
+              <img class="gridme__gallery__media" src="./dist/assets/images/firefox-square.jpg" width="300" height="300" loading="lazy" alt="Photo by janeb13@Pixabay" />
+            </figure>
+          </li>
+          <li class="gridme__item">
+            <figure class="gridme__gallery">
+              <a class="gridme__gallery__linkbox" href="./dist/assets/images/wolf.jpg">
+                <figcaption class="gridme__gallery__caption">Canis lupus</figcaption>
+                <span class="gridme__gallery__link-label">View fullsize</span>
+              </a>
+              <img class="gridme__gallery__media" src="./dist/assets/images/wolf-square.jpg" width="300" height="300" loading="lazy" alt="Photo by AvinaCeleste@Pixabay" />
+            </figure>
+          </li>
+          <li class="gridme__item">
+            <figure class="gridme__gallery">
+              <a class="gridme__gallery__linkbox" href="./dist/assets/images/rhino.jpg">
+                <figcaption class="gridme__gallery__caption">Rhinoceros unicornis</figcaption>
+                <span class="gridme__gallery__link-label">View fullsize</span>
+              </a>
+              <img class="gridme__gallery__media" src="./dist/assets/images/rhino-square.jpg" width="300" height="300" loading="lazy" alt="Photo by @Pixabay" />
+            </figure>
+          </li>
+          <li class="gridme__item">
+            <figure class="gridme__gallery">
+              <a class="gridme__gallery__linkbox" href="./dist/assets/images/koala.jpg">
+                <figcaption class="gridme__gallery__caption">Phascolarctos cinereus</figcaption>
+                <span class="gridme__gallery__link-label">View fullsize</span>
+              </a>
+              <img class="gridme__gallery__media" src="./dist/assets/images/koala-square.jpg" width="300" height="300" loading="lazy" alt="Photo by TahliaStantonPhotography@Pixabay" />
+            </figure>
+          </li>
+        </ul>
+        <!-- Block snippet ends. -->
+        <div class="code">
+          <h4 class="code__title" tabindex="0"><abbr>HTML</abbr></h4>
+          <pre class="code__include">
+            <code class="language-markup">
+              &lt;ul class=&quot;gridme gridme--gallery&quot;&gt;
+                &lt;li class=&quot;gridme__item&quot;&gt;
+                  &lt;figure class=&quot;gridme__gallery&quot;&gt;
+                    &lt;a class=&quot;gridme__gallery__linkbox&quot; href=&quot;/your/path/to/image-high-def.jpg&quot;&gt;
+                      &lt;figcaption class=&quot;gridme__gallery__caption&quot;&gt;Your image caption&lt;/figcaption&gt;
+                      &lt;span class=&quot;gridme__gallery__link-label&quot;&gt;View fullsize&lt;/span&gt;
+                    &lt;/a&gt;
+                    &lt;img class=&quot;gridme__gallery__media&quot; src=&quot;/your/path/to/image-low-def.jpg&quot; width=&quot;300&quot; height=&quot;300&quot; loading=&quot;lazy&quot; alt=&quot;Your alt description&quot; /&gt;
+                  &lt;/figure&gt;
+                &lt;/li&gt;
+                &lt;!-- [...] Other list items --&gt;
+              &lt;/ul&gt;
+            </code>
+          </pre>
+        </div>
+      </div>
+      <div class="snippet">
+        <h3 tabindex="0">Grid as cards feed</h3>
+        <!-- Block snippet starts. -->
+        <ul class="gridme gridme--card">
+          <li class="gridme__item">
+            <article class="gridme__card" tabindex="0">
+              <h2 class="gridme__card__title">Haliaeetus leucocephalus</h2>
+              <a class="gridme__cta" href="./dist/assets/images/eagle.jpg">
+                <span class="gridme__cta__label">Read more about this</span>
+              </a>
+              <div class="gridme__card__cover">
+                <img class="gridme__card__cover__media" src="./dist/assets/images/eagle.jpg" width="450" height="300" loading="lazy" alt="Photo by Christoph@Pixabay" />
+              </div>
+              <p class="gridme__card__desc">The bald eagle is a bird of prey found in North America. A sea eagle, it has two known subspecies and forms a species pair with the white-tailed eagle.</p>
+            </article>
+          </li>
+          <li class="gridme__item">
+            <article class="gridme__card" tabindex="0">
+              <h2 class="gridme__card__title">Panthera pardus</h2>
+              <a class="gridme__cta" href="./dist/assets/images/panther.jpg">
+                <span class="gridme__cta__label">Read more about this</span>
+              </a>
+              <div class="gridme__card__cover">
+                <img class="gridme__card__cover__media" src="./dist/assets/images/panther.jpg" width="450" height="300" loading="lazy" alt="Photo by IanZA@Pixabay" />
+              </div>
+              <p class="gridme__card__desc">A black panther is the melanistic colour variant found in members of the genus Panthera, particularly of the leopard in Asia and Africa, and the jaguar in the Americas.</p>
+            </article>
+          </li>
+          <li class="gridme__item">
+            <article class="gridme__card" tabindex="0">
+              <h2 class="gridme__card__title">Panthera leo</h2>
+              <a class="gridme__cta" href="./dist/assets/images/lion.jpg">
+                <span class="gridme__cta__label">Read more about this</span>
+              </a>
+              <div class="gridme__card__cover">
+                <img class="gridme__card__cover__media" src="./dist/assets/images/lion.jpg" width="450" height="300" loading="lazy" alt="Photo by Alexas_Fotos@Pixabay" />
+              </div>
+              <p class="gridme__card__desc">The lion is a species in the family Felidae and a member of the genus Panthera. It has a muscular, deep-chested body, short, rounded head, round ears, and a hairy tuft at the end of its tail.</p>
+            </article>
+          </li>
+          <li class="gridme__item">
+            <article class="gridme__card" tabindex="0">
+              <h2 class="gridme__card__title">Ailurus fulgens</h2>
+              <a class="gridme__cta" href="./dist/assets/images/firefox.jpg">
+                <span class="gridme__cta__label">Read more about this</span>
+              </a>
+              <div class="gridme__card__cover">
+                <img class="gridme__card__cover__media" src="./dist/assets/images/firefox.jpg" width="450" height="300" loading="lazy" alt="Photo by janeb13@Pixabay" />
+              </div>
+              <p class="gridme__card__desc">The red panda is a mammal species native to the eastern Himalayas and southwestern China. It is listed as Endangered on the IUCN Red List.</p>
+            </article>
+          </li>
+          <li class="gridme__item">
+            <article class="gridme__card" tabindex="0">
+              <h2 class="gridme__card__title">Canis lupus</h2>
+              <a class="gridme__cta" href="./dist/assets/images/wolf.jpg">
+                <span class="gridme__cta__label">Read more about this</span>
+              </a>
+              <div class="gridme__card__cover">
+                <img class="gridme__card__cover__media" src="./dist/assets/images/wolf.jpg" width="450" height="300" loading="lazy" alt="Photo by AvinaCeleste@Pixabay" />
+              </div>
+              <p class="gridme__card__desc">The wolf is a large canine native to Eurasia and North America. More than thirty subspecies of Canis lupus have been recognized comprise non-domestic/feral subspecies.</p>
+            </article>
+          </li>
+          <li class="gridme__item">
+            <article class="gridme__card" tabindex="0">
+              <h2 class="gridme__card__title">Ara ararauna</h2>
+              <a class="gridme__cta" href="./dist/assets/images/ara.jpg">
+                <span class="gridme__cta__label">Read more about this</span>
+              </a>
+              <div class="gridme__card__cover">
+                <img class="gridme__card__cover__media" src="./dist/assets/images/ara.jpg" width="450" height="300" loading="lazy" alt="Photo by Couleur@Pixabay" />
+              </div>
+              <p class="gridme__card__desc">The blue-and-yellow macaw is a large South American parrot with mostly blue top parts and light orange underparts, with gradient hues of green on top of its head.</p>
+            </article>
+          </li>
+        </ul>
+        <!-- Block snippet ends. -->
+        <div class="code">
+          <h4 class="code__title" tabindex="0"><abbr>HTML</abbr></h4>
+          <pre class="code__include">
+            <code class="language-markup">
+              &lt;ul class=&quot;gridme gridme--card&quot;&gt;
+                &lt;li class=&quot;gridme__item&quot;&gt;
+                  &lt;article class=&quot;gridme__card&quot; tabindex=&quot;0&quot;&gt;
+                    &lt;h2 class=&quot;gridme__card__title&quot;&gt;Your card title&lt;/h2&gt;
+                    &lt;a class=&quot;gridme__cta&quot; href=&quot;/your/path/to/someting&quot;&gt;
+                      &lt;span class=&quot;gridme__cta__label&quot;&gt;Your link label&lt;/span&gt;
+                    &lt;/a&gt;
+                    &lt;div class=&quot;gridme__card__cover&quot;&gt;
+                      &lt;img class=&quot;gridme__card__cover__media&quot; src=&quot;/your/path/to/image.jpg&quot; width=&quot;450&quot; height=&quot;300&quot; loading=&quot;lazy&quot; alt=&quot;Your alt description&quot; /&gt;
+                    &lt;/div&gt;
+                    &lt;p class=&quot;gridme__card__desc&quot;&gt;Your card description.&lt;/p&gt;
+                  &lt;/article&gt;
+                &lt;/li&gt;
+                &lt;!-- [...] Other list items --&gt;
+              &lt;/ul&gt;
+            </code>
+          </pre>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2 tabindex="0">How to use</h2>
+      <ol class="helper">
+        <li>Add <code>/dist/assets/css/gridme.min.css</code> to your document.
+          <div class="code">
+            <h4 class="code__title" tabindex="0"><abbr>HTML</abbr></h4>
+            <pre class="code__include">
+              <code class="language-markup">
+                &lt;link rel=&quot;stylesheet&quot; href=&quot;./your/path/to/gridme.min.css&quot; media=&quot;all&quot; /&gt;
+              </code>
+            </pre>
+          </div>
+        </li>
+        <li>Or, include it your global <abbr title="Cascading Style Sheets">CSS</abbr>/<abbr title="Syntactically Awesome Style Sheets">SASS</abbr> bundle file to minimize <abbr title="HyperText Transfer Protocole">HTTP</abbr> requests.</li>
+        <li>Copy/paste the snippet you want in your document / component and replace demo content with your own (<a href="https://github.com/ThomasM85/ThomasM85/tree/master/snippets/gridmecss#customization">how customize ?</a>).</li>
+        <li>Customize <a href="https://github.com/ThomasM85/ThomasM85/tree/master/snippets/gridmecss#semantics">markup</a>, <a href="https://github.com/ThomasM85/ThomasM85/tree/master/snippets/gridmecss#css-properties"><abbr>CSS</abbr> properties</a> and <a href="https://github.com/ThomasM85/ThomasM85/tree/master/snippets/gridmecss#animations">animations</a> to fit with your <abbr title="User Interface">UI</abbr>.</li>
+        <li><strong>That's all. Enjoy !</strong></li>
+      </ol>
+    </section>
+  </main>
+  <footer>
+    <p class="github">
+      <a href="https://github.com/ThomasM85/ThomasM85/tree/master/snippets/gridmecss">Get it on Github</a>
+    </p>
+    <p><abbr>HTML</abbr> & <abbr>CSS</abbr> code and design by ThomasM85 under <a href="https://github.com/ThomasM85/ThomasM85/blob/master/LICENSE">GNU GPL 3.0 licence</a>.
+      <br/>Images by <a href="https://pixabay.com/fr/users/blende12-201217/">blende12</a>, <a href="https://pixabay.com/users/wikiimages-1897/">WikiImages</a> and <a href="https://pixabay.com/fr/users/no-longer-here-19203/">No-longer-here</a> under <a href="https://pixabay.com/service/license/">Pixabay licence</a>.
+      <br /><abbr title="Scalable Vector Graphics">SVG</abbr> icons by <a href="https://icons8.com/line-awesome">Icon8</a> under <a href="https://icons8.com/license">Free licence</a>.
+    </p>
+  </footer>
+  <div id="loader">
+    <p>Chargement</p>
+    <div class="loader-pacman">
+      <div class="pacman">
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    window.addEventListener('load', function () {
+      const loader = document.getElementById('loader');
+      loader.style.opacity = '0';
+      let t;
+      clearTimeout(t);
+      t = setTimeout(function() {
+        loader.remove();
+      }, 300);
+    }, false);
+  </script>
+  <script src="https://code.thomas-marget.fr/js/prism.min.js"></script>
+</body>
+</html>
