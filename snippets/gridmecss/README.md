@@ -15,7 +15,7 @@ Check demos here : https://code.thomas-marget.fr/snippets/gridmecss/.
 Works on all modern browsers.
 
 - HTML 5
-- CSS 3 with properties, Properties and Grid modules
+- CSS 3 with properties and Grid modules
 
 ## Usage
 
@@ -23,7 +23,6 @@ Works on all modern browsers.
 - Add HTML snippet bounded by `<!-- Block snippet starts. -->` and `<!-- Block snippet ends. -->` in your HTML document / component DOM
 - Customize content (take a look on next section)
 - Optional: Customize CSS to fit with your own design.
-
 
 ## Customization
 
@@ -78,9 +77,13 @@ Card image thumbnail.
 Card description.
 - Just plain text !
 
+## Optimization
+
+You can use HTML `<picture>` tag or `srcset` attribute to serve optimized medias for different width of viewport.
+
 ## CSS properties
 
-You can customize CSS properties with your own or add extra ones.
+You can customize CSS properties with your own or add extra ones. Take a look in `./src/scss/**/*` folders then, do your stuff and compile with SASS.
 
 - `--color1`: Text color (default: `#fff`)
 - `--color2`: Stroke color (default: `#ff0066`)
