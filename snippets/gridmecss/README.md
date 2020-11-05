@@ -49,7 +49,7 @@ Gallery image thumbnail.
 
 ### Grid as cards feed
 
-You (have to) can replace demo content with your own for this 4 elements:
+You (have to) can replace demo content with your own for this 5 elements:
 
 #### `.gridme__card__title`
 
@@ -104,4 +104,4 @@ By default, it uses `<figure>` and `<figcaption>` semantic tags. Of course, you 
 
 This snippet was designed for document cards feed.
 
-By default, it uses `<article>` and `<h2>` semantic tags. Of course, you can replace these by neutral tags like (`div`, `span`) for the card or hn tags (`h3`, `h4`, ...). Depends from HTML context where you will include it.
+By default, it uses `<article>` and `<h2>` semantic tags. Of course, you can replace these by neutral tags like (`div`, `span`) for the card or `<hn>` tags (`h3`, `h4`, ...). Depends from HTML context where you will include it.
