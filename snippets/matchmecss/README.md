@@ -20,7 +20,7 @@ Works on all modern browsers.
 
 ## Usage
 
-- Add stylesheet `./assets/css/matchme.css` into `<head>` of your HTML file
+- Add stylesheet `./dist/assets/css/matchme.min.css` into `<head>` of your HTML file
 - Add HTML snippet bounded by `<!-- Block snippet starts. -->` and `<!-- Block snippet ends. -->` in your HTML document / component DOM
 - Customize content (take a look on next section)
 - Optional: Customize CSS to fit with your own design.
