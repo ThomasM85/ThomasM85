@@ -35,6 +35,10 @@ function css() {
         .pipe(changed(source))
         .pipe(sass())
         .pipe(rename({
+            extname: '.css'
+        }))
+        .pipe(dest('./dist/assets/css/'))
+        .pipe(rename({
             extname: '.min.css'
         }))
         .pipe(cssnano())
