@@ -96,7 +96,7 @@ Apparence and layout are handled by CSS classes (using BEM). Not by HTML tags.
 
 ### Grid as pictures gallery
 
-This snippet was designed for document picture gallery.
+This snippet was designed for document pictures gallery.
 
 By default, it uses `<article>` and `<h2>` semantic tags. Of course, you can replace these by neutral tags like (`div`, `span`) for the card or `<hn>` tags (`h3`, `h4`, ...). Depends from HTML context where you will include it.
 
