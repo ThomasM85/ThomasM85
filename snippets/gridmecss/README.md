@@ -79,7 +79,7 @@ Card description.
 
 ## Optimization
 
-You can use HTML `<picture>` tag or `srcset` attribute to serve optimized medias for different width of viewport.
+You can use HTML `<picture>` tag instead standalone `<img>` or `srcset` attribute to serve optimized medias for different width of viewport.
 
 ## CSS properties
 
@@ -98,7 +98,7 @@ Apparence and layout are handled by CSS classes (using BEM). Not by HTML tags.
 
 This snippet was designed for document pictures gallery.
 
-By default, it uses `<article>` and `<h2>` semantic tags. Of course, you can replace these by neutral tags like (`div`, `span`) for the card or `<hn>` tags (`h3`, `h4`, ...). Depends from HTML context where you will include it.
+By default, it uses `<article>` and `<h2>` semantic tags. Of course, you can replace these by neutral tags like (`div`, `span`) for the gallery item or `<hn>` tags (`h3`, `h4`, ...). Depends from HTML context where you will include it.
 
 ### Grid as cards feed
 
