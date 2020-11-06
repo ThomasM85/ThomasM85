@@ -42,19 +42,19 @@ function css() {
         .pipe(browsersync.stream());
 }
 
-// Optimize images
+// Optimize medias
 
-function img() {
-    return src('./src/images/*')
+function med() {
+    return src('./src/medias/*')
         .pipe(imagemin())
-        .pipe(dest('./dist/assets/images/'));
+        .pipe(dest('./dist/medias/'));
 }
 
 // Watch files
 
 function watchFiles() {
     watch('./src/scss/**/*', css);
-    watch('./src/images/*', img);
+    watch('./src/medias/*', med);
 }
 
 // BrowserSync
@@ -71,4 +71,4 @@ function browserSync() {
 // Tasks to define the execution of the functions simultaneously or in series
 
 exports.watch = parallel(watchFiles, browserSync);
-exports.default = series(clear, parallel(css, img));
+exports.default = series(clear, parallel(css, med));
